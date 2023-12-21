@@ -346,6 +346,9 @@ header {
   margin: 20px;
   padding: 10px;
   border-radius: 8px;
+  max-width: 800px;
+  background: rgba(1, 86, 119, 0.1); /* Fondo con opacidad */
+
 }
 
 .testimonio-content {
@@ -358,8 +361,8 @@ header {
 
 /* Clase específica para la imagen */
 .imagen-testimonio {
-  width: 120px; /* Ajusta el ancho según tus necesidades */
-  height: 120px; /* Ajusta la altura según tus necesidades */
+  width: 120px; 
+  height: 120px; 
 }
 
 .nombre-persona {
