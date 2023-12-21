@@ -348,7 +348,16 @@ header {
   border-radius: 8px;
   max-width: 800px;
   background: rgba(1, 86, 119, 0.1); /* Fondo con opacidad */
+  animation: floatAnimation 4s infinite ease-in-out;
+}
 
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .testimonio-content {
@@ -370,6 +379,41 @@ header {
   margin-top: 10px;
 }
 
+
+/* CardServicios.css */
+.card-servicios {
+  display: flex;
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 800px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-contenido {
+  flex: 1;
+}
+
+.card-imagen {
+  overflow: hidden;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  margin-left: 10px;
+}
+
+.card-imagen img {
+  width: 400px;
+  height: 300px;
+}
+
+.card-servicios:hover {
+  background: rgba(1, 86, 119, 0.1); /* Fondo con opacidad */
+}
+
+.card-servicios:hover .card-imagen {
+  width: 50%;
+}
 
 
 
