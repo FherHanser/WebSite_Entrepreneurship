@@ -20,16 +20,40 @@ function Nav() {
     return () => clearInterval(intervalId);
   }, []); // El segundo argumento [] asegura que el efecto solo se ejecute una vez al montar el componente
 
+  const handleNavClick = () => {
+    // Desplaza la página al principio
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Agrega desplazamiento suave si lo deseas
+    });
+  };
+
   return (
     <nav>
-      <Link to="/">Inicio</Link>
-      <Link to="/QuienesSomos">Quienes Somos</Link>
-      <Link to="/Servicios">Servicios</Link>
-      <a href="#section4">Cursos</a>
-      <a href="#section3">Alianzas</a>
-      <a href="#section3">Market</a>
-      <a href="#section4">Revista</a>
-      <a href="#section4">Contacto</a>
+      <Link to="/" onClick={handleNavClick}>
+        Inicio
+      </Link>
+      <Link to="/QuienesSomos" onClick={handleNavClick}>
+        Quienes Somos
+      </Link>
+      <Link to="/Servicios" onClick={handleNavClick}>
+        Servicios
+      </Link>
+      <a href="#section4" onClick={handleNavClick}>
+        Cursos
+      </a>
+      <a href="#section3" onClick={handleNavClick}>
+        Alianzas
+      </a>
+      <a href="#section3" onClick={handleNavClick}>
+        Market
+      </a>
+      <a href="#section4" onClick={handleNavClick}>
+        Revista
+      </a>
+      <a href="#section4" onClick={handleNavClick}>
+        Contacto
+      </a>
     </nav>
   );
 }
