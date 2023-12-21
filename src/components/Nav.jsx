@@ -39,9 +39,9 @@ function Nav() {
       <Link to="/Servicios" onClick={handleNavClick}>
         Servicios
       </Link>
-      <a href="#section4" onClick={handleNavClick}>
+      <Link to="/Cursos" onClick={handleNavClick}>
         Cursos
-      </a>
+        </Link>
       <a href="#section3" onClick={handleNavClick}>
         Alianzas
       </a>

@@ -14,6 +14,7 @@ import section4Image from './components/images/section44.jpg';
 import section5Image from './components/images/section5.jpg';
 import QuienesSomos from './components/QuienesSomos';
 import Servicios from './components/Servicios';
+import Cursos from './components/Cursos';
 import './components/style.css';
 
 
@@ -71,6 +72,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/QuienesSomos" element={<QuienesSomos />} />
         <Route path="/Servicios" element={<Servicios />} />
+        <Route path="/Cursos" element={<Cursos />} />
 
         {/* Otras rutas y componentes según sea necesario */}
       </Routes>
