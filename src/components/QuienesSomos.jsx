@@ -32,7 +32,7 @@ function QuienesSomos() {
         <Testimonio
           emprendimiento="Herrería 'Los Amigos'"
           nombre="Juan Pérez"
-          contenido="¡Increíble servicio! Gracias a Quiénes Somos por inspirarme cada día. Las historias compartidas aquí realmente tocan el corazón."
+          contenido="¡Increíble servicio! Gracias a por inspirarme cada día. Las historias compartidas aquí realmente tocan el corazón."
           imagenSrc={imgTest1} // Reemplaza con la URL de la imagen
 />
 
