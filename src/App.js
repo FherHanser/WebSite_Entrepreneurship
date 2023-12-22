@@ -17,7 +17,9 @@ import Servicios from './components/Servicios';
 import Cursos from './components/Cursos';
 import Alianzas from './components/Alianzas';
 import Market from './components/Market';
+import Contacto from './components/Contacto';
 import './components/style.css';
+
 
 
 const Home = () => {
@@ -77,6 +79,7 @@ const App = () => {
         <Route path="/Cursos" element={<Cursos />} />
         <Route path="/Alianzas" element={<Alianzas />} />
         <Route path="/Market" element={<Market />} />
+        <Route path="/Contacto" element={<Contacto />} />
 
         {/* Otras rutas y componentes según sea necesario */}
       </Routes>

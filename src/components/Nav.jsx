@@ -51,9 +51,9 @@ function Nav() {
       <a href="#section4" onClick={handleNavClick}>
         Revista
       </a>
-      <a href="#section4" onClick={handleNavClick}>
+      <Link to="/Contacto" onClick={handleNavClick}>
         Contacto
-      </a>
+     </Link>
     </nav>
   );
 }
