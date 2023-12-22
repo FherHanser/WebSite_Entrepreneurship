@@ -71,7 +71,6 @@ nav a:hover {
 }
 
 
-
 nav a {
   color: #fff;
   /* Color blanco para el texto */
@@ -299,7 +298,7 @@ header {
   /* Espacio entre la foto y el párrafo */
 }
 
-/* style.css (o el nombre de tu hoja de estilos global) */
+/*todos los textos*/
 .txt_container {
   margin-top: 200px; /* Ajusta la cantidad de margen según sea necesario */
   font-family: 'Kanit', sans-serif;
@@ -309,6 +308,14 @@ header {
   flex-direction: column;
   align-items: center;
   background: rgba(255, 255, 255, 0.2); /* Fondo con opacidad */
+
+
+  max-width: 800px;
+  margin: 200px auto; /* Ajusta la posición verticalmente y centra horizontalmente */
+  padding: 20px; /* Agrega un espacio interno al contenedor */
+  font-family: 'Kanit', sans-serif;
+  text-align: justify;
+
 }
 .txt_container h1{
   margin-top: 20px;
@@ -349,6 +356,8 @@ header {
   max-width: 800px;
   background: rgba(1, 86, 119, 0.1); /* Fondo con opacidad */
   animation: floatAnimation 4s infinite ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 @keyframes floatAnimation {
@@ -389,6 +398,8 @@ header {
   border-radius: 8px;
   max-width: 800px;
   transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .card-contenido {
@@ -413,6 +424,87 @@ header {
 
 .card-servicios:hover .card-imagen {
   width: 50%;
+}
+
+/* CardCurso.css */
+.card-curso {
+  display: flex;
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 800px;
+  min-width: 780px;
+  background: rgba(249, 250, 250, .9); /* Fondo con opacidad */
+  transition: transform 0.3s ease-in-out; /* Agrega una transición al cambio de escala */
+  min-height: 100px; /* Ajusta la altura mínima según sea necesario */
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.card-curso:hover {
+  transform: scale(1.05); /* Escala del elemento al pasar el ratón sobre él */
+}
+
+.portada-curso {
+  width: 200px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out; /* Agrega una transición al cambio de escala */
+}
+
+.card-curso:hover .portada-curso {
+  transform: scale(1.2); /* Escala del contenedor de la portada al pasar el ratón sobre el curso */
+}
+
+.imagen-curso {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-curso {
+  margin-left: 30px;
+}
+
+.info-curso h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Alianzas.css */
+.alianzas-container {
+  background: rgba(249, 250, 250, 0.4);
+  color: #072541;
+  max-width: 800px;
+  margin: 200px auto; /* Ajusta la posición verticalmente y centra horizontalmente */
+  padding: 20px; /* Agrega un espacio interno al contenedor */
+  font-family: 'Kanit', sans-serif;
+  text-align: justify;
+}
+
+.imagen-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.imagen-section img {
+  width: 220px; /* Establece el tamaño deseado */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.alianzas-container p{
+margin-top: 20px;
+font-size: 18px;
+}
+
+.alianzas-container h1{
+  text-align: center;
 }
 
 
