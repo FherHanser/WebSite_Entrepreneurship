@@ -234,6 +234,9 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+header h1{
+  color: #fff;
+}
 
 .logo {
   width: 150px;
@@ -419,7 +422,7 @@ header {
 }
 
 .card-servicios:hover {
-  background: rgba(1, 86, 119, 0.1); /* Fondo con opacidad */
+  background: rgba(1, 86, 119, 0.2); /* Fondo con opacidad */
 }
 
 .card-servicios:hover .card-imagen {
@@ -444,6 +447,7 @@ header {
 
 .card-curso:hover {
   transform: scale(1.05); /* Escala del elemento al pasar el ratón sobre él */
+  border-color: #3498db;
 }
 
 .portada-curso {
@@ -456,6 +460,7 @@ header {
 
 .card-curso:hover .portada-curso {
   transform: scale(1.2); /* Escala del contenedor de la portada al pasar el ratón sobre el curso */
+ 
 }
 
 .imagen-curso {
@@ -483,6 +488,7 @@ header {
   padding: 20px; /* Agrega un espacio interno al contenedor */
   font-family: 'Kanit', sans-serif;
   text-align: justify;
+  animation: floatAnimation 4s infinite ease-in-out;
 }
 
 .imagen-section {
@@ -492,11 +498,17 @@ header {
 }
 
 .imagen-section img {
-  width: 220px; /* Establece el tamaño deseado */
+  width: 200px; /* Establece el tamaño deseado */
   height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
   border: 1px solid #ccc;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out; /* Agrega una transición al cambio de escala */
 }
+
+.imagen-section img:hover {
+  transform: scale(1.2); /* Agranda la imagen al pasar el mouse sobre ella */
+}
+
 
 .alianzas-container p{
 margin-top: 20px;
@@ -504,8 +516,213 @@ font-size: 18px;
 }
 
 .alianzas-container h1{
+  margin-top: 20px;
   text-align: center;
 }
 
+/* CardMarket.css */
+
+.market-container{
+margin-top: 200px;
+background: rgba(249, 250, 250, 0.4);
+color: #072541;
+max-width: 800px;
+margin: 200px auto; /* Ajusta la posición verticalmente y centra horizontalmente */
+padding: 20px; /* Agrega un espacio interno al contenedor */
+font-family: 'Kanit', sans-serif;
+text-align: justify;
+
+}
+.market-container h1{
+  text-align: center;
+}
+
+/* Añade estos estilos a tu archivo style.css */
+
+.card-market {
+  display: flex;
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 800px;
+  background: rgba(249, 250, 250, 0.4);
+  transition: transform 0.3s ease-in-out; /* Agrega una transición al cambio de escala */
+
+}
+
+.card-market:hover {
+  transform: scale(1.1); /* Ajusta la escala según tus preferencias */
+  border-color: #3498db;
+  background: rgba(255, 255, 255, 0.8);
 
 
+}
+
+.card-left {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo-market {
+  width: 200px; /* Ajusta según sea necesario */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.info-market {
+  flex: 2;
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-container{
+  margin-top: 200px;
+  background: rgba(249, 250, 250, 0.4);
+  color: #072541;
+  max-width: 400px;
+  margin: 200px auto; /* Ajusta la posición verticalmente y centra horizontalmente */
+  padding: 10px; /* Agrega un espacio interno al contenedor */
+  font-family: 'Kanit', sans-serif;
+  text-align: justify;
+  animation: floatAnimation 4s infinite ease-in-out;
+}
+
+.contacto-container:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.contacto-container h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mensaje-textarea {
+height: 100px;
+
+}
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 0px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Clases específicas */
+.nombre-apellido {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nombre-container,
+.apellido-container {
+  width: 45%; /* Ajusta el ancho según tus preferencias */
+}
+
+/* HistoriaExito.css */
+.historia-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.parrafo-con-foto {
+  margin-bottom: 30px;
+}
+
+.imagen-historia {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333; /* Cambia el color del título según tus preferencias */
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+p strong {
+  font-weight: bold;
+  color: #EA1179; /* Color de resaltado */
+}
+
+/*Historia*/
+.historia-container {
+  background: rgba(249, 250, 250, 0.4);
+  color: #072541;
+  max-width: 800px;
+  margin: 200px auto; /* Ajusta la posición verticalmente y centra horizontalmente */
+  padding: 20px; /* Agrega un espacio interno al contenedor */
+  font-family: 'Kanit', sans-serif;
+  text-align: justify;
+  animation: floatAnimation 4s infinite ease-in-out;
+}
+
+.imagen-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.imagen-section img {
+  width: 200px; /* Establece el tamaño deseado */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out; /* Agrega una transición al cambio de escala */
+}
+
+.imagen-section img:hover {
+  transform: scale(1.2); /* Agranda la imagen al pasar el mouse sobre ella */
+}
+
+
+.historia-container p{
+margin-top: 20px;
+font-size: 18px;
+}
+
+.historia-container h1{
+  margin-top: 20px;
+  text-align: center;
+}

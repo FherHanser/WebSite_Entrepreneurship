@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import './style.css'; // Asegúrate de tener el archivo de estilos para Wallpaper
+import './style.css'; 
 
 const Wallpaper = ({ imageUrl }) => {
   const wallpaperRef = useRef(null);

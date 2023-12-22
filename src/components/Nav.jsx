@@ -45,15 +45,15 @@ function Nav() {
       <Link to="/Alianzas" onClick={handleNavClick}>
         Alianzas
      </Link>
-      <a href="#section3" onClick={handleNavClick}>
+     <Link to="/Market" onClick={handleNavClick}>
         Market
-      </a>
+     </Link>
       <a href="#section4" onClick={handleNavClick}>
         Revista
       </a>
-      <a href="#section4" onClick={handleNavClick}>
+      <Link to="/Contacto" onClick={handleNavClick}>
         Contacto
-      </a>
+     </Link>
     </nav>
   );
 }
