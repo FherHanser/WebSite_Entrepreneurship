@@ -1,6 +1,6 @@
 // FormularioContacto.js
 import React, { useState } from 'react';
-import './style.css'; // Importa tus estilos aquí si es necesario
+import './style.css'; 
 
 const FormularioContacto = () => {
   const [nombre, setNombre] = useState('');
