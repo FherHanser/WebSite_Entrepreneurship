@@ -48,9 +48,9 @@ function Nav() {
      <Link to="/Market" onClick={handleNavClick}>
         Market
      </Link>
-      <a href="#section4" onClick={handleNavClick}>
+     <Link to="/Revista" onClick={handleNavClick}>
         Revista
-      </a>
+        </Link>
       <Link to="/Contacto" onClick={handleNavClick}>
         Contacto
      </Link>

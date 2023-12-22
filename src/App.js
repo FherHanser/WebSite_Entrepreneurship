@@ -17,12 +17,13 @@ import Cursos from './components/Cursos';
 import Alianzas from './components/Alianzas';
 import Market from './components/Market';
 import Contacto from './components/Contacto';
-import HistoriaExito from './components/HistoriaExito'; // Agregado para demostrar cómo conectar las secciones
-import './components/style.css';
+import PaginaRevista from './components/PaginaRevista';
+import HistoriaExito from './components/HistoriaExito';
 import HistoriaExito1 from './components/HistoriaExito1';
 import HistoriaExito2 from './components/HistoriaExito2';
 import HistoriaExito3 from './components/HistoriaExito3';
 import HistoriaExito4 from './components/HistoriaExito4';
+import './components/style.css';
 
 
 const Home = () => {
@@ -88,6 +89,7 @@ const App = () => {
         <Route path="/Alianzas" element={<Alianzas />} />
         <Route path="/Market" element={<Market />} />
         <Route path="/Contacto" element={<Contacto />} />
+        <Route path="/Revista" element={<PaginaRevista />} />
         <Route path="/historia-exito-1" element={<HistoriaExito numeroHistoria="1" />} />
         <Route path="/historia-exito-2" element={<HistoriaExito1 numeroHistoria="2" />} />
         <Route path="/historia-exito-3" element={<HistoriaExito2 numeroHistoria="3" />} />
