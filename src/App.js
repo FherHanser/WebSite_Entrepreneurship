@@ -16,6 +16,7 @@ import QuienesSomos from './components/QuienesSomos';
 import Servicios from './components/Servicios';
 import Cursos from './components/Cursos';
 import Alianzas from './components/Alianzas';
+import Market from './components/Market';
 import './components/style.css';
 
 
@@ -75,6 +76,7 @@ const App = () => {
         <Route path="/Servicios" element={<Servicios />} />
         <Route path="/Cursos" element={<Cursos />} />
         <Route path="/Alianzas" element={<Alianzas />} />
+        <Route path="/Market" element={<Market />} />
 
         {/* Otras rutas y componentes según sea necesario */}
       </Routes>
