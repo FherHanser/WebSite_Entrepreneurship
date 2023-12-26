@@ -733,3 +733,16 @@ font-size: 18px;
   color: #072541;
 
 }
+
+/* style.css */
+.pdfViewContainer {
+  background: rgba(249, 250, 250, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250vh;
+  max-width: 800px;
+  margin: 200px auto; /* Ajusta el margen según tus necesidades */
+  border: 1px solid #ccc;
+  overflow: scroll; /* o overflow: visible; */
+}

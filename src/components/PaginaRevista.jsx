@@ -4,16 +4,20 @@ import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
 import Revista from './Revista'; 
+import Wallpaper from './Wallpaper';
+import space from './images/section1.jpg';
 import './style.css';
+import pdfUrl from './images/revista1.pdf'; 
 
 function PaginaRevista() {
-  const pdfUrl = './images/revista1.pdf'; 
-
   return (
     <div>
+      <Wallpaper imageUrl={space} />
       <Header />
       <Nav />
-      <Revista pdfUrl={pdfUrl} />
+      <div className='pdfViewContainer'>
+        <Revista pdfUrl={pdfUrl} />
+      </div>
       <Footer />
     </div>
   );

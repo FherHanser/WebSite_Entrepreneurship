@@ -1,14 +1,16 @@
-// Revista.js
 import React from 'react';
-import { Worker, Viewer } from '@react-pdf-viewer/core';
+import { Document, Page, pdfjs } from 'react-pdf';
 import '@react-pdf-viewer/core/lib/styles/index.css';
+import './style.css';
 
 const Revista = ({ pdfUrl }) => {
+  pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+
   return (
-    <div>
-      <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${window.pdfjs.version}/build/pdf.worker.min.js`}>
-        <Viewer fileUrl={pdfUrl} />
-      </Worker>
+    <div className='paginaPDF'>
+      <Document file={pdfUrl}>
+        <Page pageNumber={1} />
+      </Document>
     </div>
   );
 };
