@@ -11,12 +11,12 @@ const FormularioContacto = () => {
   const [empresa, setEmpresa] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes realizar alguna lógica para enviar los datos del formulario
+    //  lógica para enviar los datos del formulario
     console.log('Datos del formulario:', { nombre, apellido, email, telefono, mensaje });
   };
 
   const handleCancel = () => {
-    // Aquí puedes agregar lógica para limpiar el formulario o realizar otras acciones al cancelar
+    // agregar lógica para limpiar el formulario o realizar otras acciones al cancelar
     setNombre('');
     setApellido('');
     setEmail('');

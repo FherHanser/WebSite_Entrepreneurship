@@ -11,7 +11,7 @@ import './style.css';
 const Contacto = () => {
   return (
     <div>
-          <Wallpaper imageUrl={space} />
+      <Wallpaper imageUrl={space} />
       <Header />
       <Nav />
 

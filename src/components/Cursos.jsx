@@ -15,13 +15,12 @@ import curso4 from './images/port_curso4.png';
 function Cursos() {
   return (
     <div>
-        <Wallpaper imageUrl={space} />
+      <Wallpaper imageUrl={space} />
       <Header />
       <Nav />
       <div className="txt_container">
-        {/* Contenido específico de la página "Cursos" */}
         <h1>Nuestros Cursos</h1>
-        <CardCurso
+          <CardCurso //Instancia componenten CardCurso
           nombre="Curso de Excel Básico"
           descripcion="Aprende a aprender a utilizar la hoja de cálculo más famosa."
           portadaSrc={curso1}
@@ -42,7 +41,6 @@ function Cursos() {
           descripcion="Lleva tus finanzas de una forma más organizada."
           portadaSrc={curso4}
         />
-        {/* Agrega más instancias de CardCurso según sea necesario */}
       </div>
       <Footer />
     </div>

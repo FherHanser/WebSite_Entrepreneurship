@@ -10,7 +10,6 @@ function CardServicios({ titulo, texto, imagenSrc }) {
         <p>{texto}</p>
       </div>
       <div className="card-imagen">
-        {/* La imagen solo se mostrará si se proporciona la URL */}
         {imagenSrc && <img src={imagenSrc} alt={`Imagen para ${titulo}`} />}
       </div>
     </div>

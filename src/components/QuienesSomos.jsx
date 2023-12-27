@@ -17,7 +17,7 @@ function QuienesSomos() {
       <Header />
       <Nav />
       <div className="txt_container">
-        {/* Contenido específico de la página "Quiénes Somos" */}
+
         <h1>Quiénes Somos</h1>
         <p>
           Somos una comunidad apasionada y comprometida con la creación y compartición de historias inspiradoras. Nuestra misión es conectar corazones y mentes a través de relatos que cautivan, emocionan y transforman. Creemos en el poder de las palabras para inspirar, motivar y generar un impacto positivo en la vida de las personas.
@@ -29,21 +29,21 @@ function QuienesSomos() {
           Únete a nosotros en este viaje emocionante de descubrimiento, aprendizaje y crecimiento. Explora nuestras secciones, sumérgete en relatos conmovedores y comparte tus propias experiencias. Juntos, creamos un espacio donde las palabras cobran vida y donde la inspiración se encuentra en cada página.
         </p>
 
-        <Testimonio
+        <Testimonio //Instancia componente Testimonio
           emprendimiento="Herrería 'Los Amigos'"
           nombre="Juan Pérez"
           contenido="¡Increíble servicio! Gracias a por inspirarme cada día. Las historias compartidas aquí realmente tocan el corazón."
-          imagenSrc={imgTest1} // Reemplaza con la URL de la imagen
+          imagenSrc={imgTest1} 
 />
 
         <Testimonio
           emprendimiento="Sala de Belleza 'Bella Maria'"
           nombre="María López"
           contenido="¡Gracias a su apoyo pude realizar mis sueños, ya dos años de ser parte de este equipo y vamos por más"
-          imagenSrc={imgTest2} // Reemplaza con la URL de la imagen
+          imagenSrc={imgTest2} 
         />
 
-        {/* Otro contenido */}
+
       </div>
       <Footer />
     </div>

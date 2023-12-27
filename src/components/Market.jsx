@@ -29,7 +29,7 @@ function Market() {
           excepcionales y encuentra lo que necesitas.
         </p>
 
-        {/* Ejemplo de uso del componente CardMarket */}
+        {/* Instancia componente CardMarket */}
         <CardMarket
           logoSrc={logoNeg1}
           titulo="Tony'z Pizza"

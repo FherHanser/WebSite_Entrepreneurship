@@ -734,15 +734,60 @@ font-size: 18px;
 
 }
 
+
 /* style.css */
-.pdfViewContainer {
-  background: rgba(249, 250, 250, 0.4);
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.appContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 250vh;
-  max-width: 800px;
-  margin: 200px auto; /* Ajusta el margen según tus necesidades */
-  border: 1px solid #ccc;
-  overflow: scroll; /* o overflow: visible; */
+  justify-content: center;
+  height: 100%;
+}
+/* style.css */
+.cardContainer {
+  width: 800px;
+  height: 480px;
+  margin: 200px auto 5px; /* Ajusta el valor superior según tus necesidades */
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(249, 250, 250, 0.4);
+}
+
+
+
+.paginaPDF {
+  text-align: center;
+  color: #072541;
+}
+
+
+.paginaPDF canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+  max-height: 400px; /* Ajusta según tus necesidades */
+}
+
+
+.paginaPDF p {
+  margin: 10px 0;
+}
+
+.paginaPDF button {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.header {
+  z-index: 2;
+}
+
+.nav {
+  z-index: 2;
 }

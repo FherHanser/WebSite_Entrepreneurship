@@ -5,7 +5,6 @@ function Testimonio({ emprendimiento, nombre, contenido, imagenSrc }) {
   return (
     <div className="testimonio-card">
       <div className="testimonio-content">
-        {/* Nuevo título para el emprendimiento */}
         <h2 className="emprendimiento-titulo">{emprendimiento}</h2>
         <p>{contenido}</p>
         <p className="nombre-persona">{nombre}</p>

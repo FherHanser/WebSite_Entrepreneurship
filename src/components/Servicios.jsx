@@ -29,9 +29,9 @@ function Servicios() {
           Nos enorgullece ofrecer una amplia variedad de servicios diseñados para satisfacer las demandas cambiantes del mundo empresarial actual. Desde la consultoría estratégica hasta la implementación de soluciones tecnológicas de vanguardia, estamos comprometidos con el éxito de nuestros clientes.
         </p>
 
-        {/* Reemplaza la lista con las tarjetas de servicios */}
+
         <div className="tarjetas-servicios">
-          <CardServicios
+          <CardServicios //Instancia componente CardServicios
             titulo="Consultoría Estratégica"
             texto="Nuestro equipo de consultores altamente calificados trabaja en estrecha colaboración contigo para comprender tu visión, objetivos y desafíos empresariales. Proporcionamos asesoramiento estratégico para optimizar tus operaciones, identificar oportunidades de crecimiento y mejorar la eficiencia general de tu organización."
             imagenSrc={imgService1}
