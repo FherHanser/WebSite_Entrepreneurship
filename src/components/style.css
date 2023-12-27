@@ -6,7 +6,6 @@ body {
 }
 
 /* Header.css */
-/* Header.css */
 header {
   background-color: #3498db;
   padding: 20px;
@@ -138,12 +137,8 @@ nav a:hover {
   /* Añadido margen inferior para separar del siguiente section */
 }
 
-
-
-
 section {
   margin-top: 120px;
-  /* Ajusta el margen superior para dar espacio al encabezado y la barra de navegación */
   height: 500px;
   display: flex;
   justify-content: center;
@@ -156,6 +151,25 @@ section {
   margin: 50px auto;
   font-family: 'Kanit', sans-serif;
 }
+
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.read-more {
+  margin-top: 20px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  section {
+    height: auto;
+    padding: 20px; /* Añadido espacio interno para mejorar la legibilidad en móviles */
+  }
+}
+
+
 
 
 .parallax {

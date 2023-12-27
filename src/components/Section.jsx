@@ -1,4 +1,3 @@
-// Section.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -19,4 +18,3 @@ function Section({ id, title, content, imageSrc, parallaxClass, enlaceHistoria }
 }
 
 export default Section;
-
