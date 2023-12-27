@@ -5,6 +5,8 @@ body {
   color: #333;
 }
 
+/* Header.css */
+/* Header.css */
 header {
   background-color: #3498db;
   padding: 20px;
@@ -13,12 +15,32 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 80px;
   font-size: 22px;
   font-family: 'Oswald', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 100px; /* Ajusta el tamaño máximo de los logos según tus necesidades */
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 32px; /* Ajusta el tamaño de fuente del título en dispositivos móviles */
+    margin: 10px 0; /* Espaciado entre el título y los logos en dispositivos móviles */
+  }
+
+  .logo {
+display: none; /* Oculta los logos en dispositivos móviles */
+  }
 }
 
 h1,
@@ -64,47 +86,77 @@ nav a {
 }
 
 /* Agrega estos estilos para el menú móvil */
-.nav-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transition: transform 0.3s ease-in-out;
+@media (min-width: 769px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0F2167;
+    z-index: 1000;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;}
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
 }
 
-.nav-links.open {
-  transform: translateY(0);
-}
-
-.mobile-menu-toggle {
-  display: none; /* Oculta el botón de hamburguesa en dispositivos no móviles */
-  cursor: pointer;
-  font-size: 24px;
-}
-
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   .mobile-menu-toggle {
-    display: block; /* Muestra el botón de hamburguesa en dispositivos móviles */
+    display: block;
     position: absolute;
     top: 10px;
     left: 10px;
     z-index: 1100;
+    cursor: pointer;
+    font-size: 24px;
   }
 
   .nav-links {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     position: fixed;
-    top: 80px; /* Ajusta según tu diseño */
+    top: 80px;
     left: 0;
     right: 0;
     background-color: #0F2167;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, visibility 0.3s, opacity 0.3s;
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
   }
 
   .nav-links a {
+    color: #fff;
+    text-decoration: none;
     padding: 15px;
     margin: 0;
   }
 }
+
+
 
 
 #section1 {

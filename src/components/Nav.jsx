@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './style.css';
-
+import './style.css'; // Asegúrate de importar tu archivo CSS
 
 function Nav() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
