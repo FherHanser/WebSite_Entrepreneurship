@@ -27,7 +27,7 @@ function HistoriaExito3() {
     // Desplaza la página al principio al cargar el componente
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Agrega desplazamiento suave 
+      behavior: 'smooth', 
     });
   }, []);
 
