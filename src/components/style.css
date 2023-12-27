@@ -157,15 +157,17 @@ nav {
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   #section1 {
+    margin-top: 240px;
     height: auto;
-    padding: 20px 20px 0; /* Añadido espacio interno para mejorar la legibilidad en móviles */
-    margin: 0 auto 50px; /* Cambiado margin-top a margin */
+    padding: 20px; /* Añadido espacio interno para mejorar la legibilidad en móviles */
+    margin: 0 auto 50px;
   }
 
   #section1 .read-more {
     margin-top: 20px;
   }
 }
+
 
 
 section {

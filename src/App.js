@@ -33,7 +33,7 @@ const Home = () => {
       <Nav />
       <Spaceship />
       <Section
-        id="section1"
+        id="section"
         title='"Historias que Inspiran"'
         content='"Historias que Inspiran" es una recopilación cautivadora de relatos llenos de momentos transformadores...'
         imageSrc={section1Image}
