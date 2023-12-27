@@ -154,16 +154,19 @@ nav {
 }
 
 /* Estilos para dispositivos móviles */
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   #section1 {
     height: auto;
-    padding: 20px;
+    padding: 20px 20px 0; /* Añadido espacio interno para mejorar la legibilidad en móviles */
+    margin: 0 auto 50px; /* Cambiado margin-top a margin */
   }
 
   #section1 .read-more {
     margin-top: 20px;
   }
 }
+
 
 section {
   margin-top: 120px;
@@ -197,6 +200,28 @@ section img {
   }
 }
 
+.read-more {
+  margin-top: 40px;
+  text-align: center;
+
+}
+
+.read-more a {
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.content {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 
 .parallax {
   background-attachment: fixed;
@@ -213,28 +238,9 @@ section img {
   float: right;
 }
 
-.content {
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.read-more {
-  margin-top: 40px;
-  text-align: center;
 
 
-}
 
-.read-more a {
-  background-color: #3498db;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 16px;
-}
 
 /* En tu archivo style.css */
 .parallax1 {
