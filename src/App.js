@@ -29,11 +29,11 @@ import './components/style.css';
 const Home = () => {
   return (
     <div>
+            <Spaceship />
       <Header />
       <Nav />
-      <Spaceship />
       <Section
-        id="section"
+        id="section1"
         title='"Historias que Inspiran"'
         content='"Historias que Inspiran" es una recopilación cautivadora de relatos llenos de momentos transformadores...'
         imageSrc={section1Image}
