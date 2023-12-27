@@ -50,9 +50,9 @@ p {
 }
 
 
+/* Estilos generales para el nav */
 nav {
   background-color: #0F2167;
-  /* Color de fondo inicial */
   padding: 10px;
   text-align: center;
   display: flex;
@@ -62,11 +62,16 @@ nav {
   top: 120px;
   z-index: 1000;
   transition: background-color 1s ease;
-  /* Agrega una transición suave para el cambio de color */
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
 }
 
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+}
 
 nav a:hover {
   background-color: #3498db;
@@ -75,67 +80,17 @@ nav a:hover {
   transition: background-color 0.3s, color 0.3s;
 }
 
-
-nav a {
-  color: #fff;
-  /* Color blanco para el texto */
-  text-decoration: none;
-  /* Sin subrayado */
-  padding: 10px;
-  margin: 0 10px;
-}
-
-/* Agrega estos estilos para el menú móvil */
-@media (min-width: 769px) {
-  .mobile-menu-toggle {
-    display: none;
-  }
-
-  .nav-links {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #0F2167;
-    z-index: 1000;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;}
-
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-}
-
-/* Estilos para dispositivos móviles */
+/* Estilos para el menú móvil */
 @media (max-width: 768px) {
-  .mobile-menu-toggle {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 1100;
-    cursor: pointer;
-    font-size: 24px;
-  }
-
   .nav-links {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100%;
     position: fixed;
     top: 80px;
     left: 0;
     right: 0;
     background-color: #0F2167;
-    flex-direction: column;
     visibility: hidden;
     opacity: 0;
     transition: transform 0.3s ease-in-out, visibility 0.3s, opacity 0.3s;
@@ -154,9 +109,17 @@ nav a {
     padding: 15px;
     margin: 0;
   }
+
+  .mobile-menu-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+    cursor: pointer;
+    font-size: 24px;
+  }
 }
-
-
 
 
 #section1 {
