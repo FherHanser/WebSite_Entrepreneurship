@@ -22,7 +22,7 @@ function Footer() {
 
   return (
     <footer className={`footer ${isVisible ? 'visible' : ''}`}>
-      <p>© 2023 SMARTMEDIA. Todos los derechos reservados.</p>
+      <p>© 2023 Fernand J. Hanser. Todos los derechos reservados.</p>
     </footer>
   );
 }
